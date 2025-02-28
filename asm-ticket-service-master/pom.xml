@@ -18,7 +18,7 @@
 	<description>Demo project for Spring Boot</description>
 	
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 		<jakarta-xml-api.version>4.0.0</jakarta-xml-api.version>
 		<packaging.type>jar</packaging.type>
 		<maven.test.skip>true</maven.test.skip>
