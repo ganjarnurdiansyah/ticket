@@ -1,0 +1,5 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/eai/AmdocsSM/SecurityManagement/v1.0" xmlns:req="http://www.telkomsel.com/eai/AmdocsSM/SecurityManagementRq/v1.0" xmlns:res="http://www.telkomsel.com/eai/AmdocsSM/SecurityManagementRs/v1.0" xmlns:headr="http://www.oracle.com" xmlns:jxb="https://jakarta.ee/xml/ns/jaxb" elementFormDefault="qualified">
+    <xs:import namespace="http://www.telkomsel.com/eai/AmdocsSM/SecurityManagementRq/v1.0" schemaLocation="ReqRes/ASMTicketRq.xsd"/>
+	<xs:import namespace="http://www.telkomsel.com/eai/AmdocsSM/SecurityManagementRs/v1.0" schemaLocation="ReqRes/ASMTicketRs.xsd"/>
+	<xs:import namespace="http://www.telkomsel.com/eai/AmdocsSM/SecurityManagementRs/v1.0" schemaLocation="ReqRes/fault.xsd"/>
+</xs:schema>

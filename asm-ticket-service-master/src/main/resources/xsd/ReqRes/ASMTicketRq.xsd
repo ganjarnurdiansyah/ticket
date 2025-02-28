@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+elementFormDefault="qualified" 
+targetNamespace="http://www.telkomsel.com/eai/AmdocsSM/SecurityManagementRq/v1.0" xmlns:tns="http://www.telkomsel.com/eai/AmdocsSM/SecurityManagementRq/v1.0" xmlns:jxb="https://jakarta.ee/xml/ns/jaxb"> 
+	<xs:element name="GetToken">
+		<xs:complexType>
+			<xs:sequence>
+                 	<xs:element name="ApplicationName" maxOccurs="1" minOccurs="0" type="xs:string"/>
+                 	<xs:element name="Module" maxOccurs="1" minOccurs="0" type="xs:string"/>
+    		</xs:sequence>
+		</xs:complexType>
+    </xs:element>
+  
+    <xs:element name="RemoveToken">
+		<xs:complexType>
+			<xs:sequence>
+                 	<xs:element name="ApplicationName" maxOccurs="1" minOccurs="0" type="xs:string"/>
+                 	<xs:element name="Module" maxOccurs="1" minOccurs="0" type="xs:string"/>
+    		</xs:sequence>
+		</xs:complexType>
+    </xs:element>
+    
+</xs:schema>

@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+elementFormDefault="qualified" 
+targetNamespace="http://www.telkomsel.com/eai/AmdocsSM/SecurityManagementRs/v1.0" xmlns:tns="http://www.telkomsel.com/eai/AmdocsSM/SecurityManagementRs/v1.0" xmlns:jxb="https://jakarta.ee/xml/ns/jaxb"> 
+	<xs:element name="fault">
+		<xs:complexType>
+			<xs:sequence>
+                 	<xs:element name="statuscode" type="xs:string"/>
+                 	<xs:element name="message" type="xs:string"/>
+    		</xs:sequence>
+		</xs:complexType>
+    </xs:element>
+</xs:schema>
