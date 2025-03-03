@@ -1,7 +1,11 @@
-FROM eclipse-temurin:17.0.7_7-jdk-jammy AS asmticket
+FROM adoptopenjdk/openjdk11:alpine-jre
 
-WORKDIR /apps/
+# Simply the artifact path
+ARG artifact=target/tiket.jar
 
-COPY ./target/soapexample-0.0.1-SNAPSHOT.jar .
+WORKDIR /opt/app
 
-CMD  ["java","-jar","soapexample-0.0.1-SNAPSHOT.jar"]
+COPY ${artifact} app.jar
+
+# This should not be changed
+ENTRYPOINT ["java","-jar","app.jar"]
